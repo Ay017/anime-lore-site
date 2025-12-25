@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #0b0b0f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(0, 0, 0, 0.7);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff2c2c;
+}
+
+.navbar nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #ff2c2c;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  background: radial-gradient(circle at top, #1a1a2e, #0b0b0f);
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 600px;
+  font-size: 18px;
+  color: #cccccc;
+}
+
+.hero button {
+  margin-top: 30px;
+  padding: 14px 30px;
+  background: #ff2c2c;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(255, 44, 44, 0.4);
+}
+
+/* Sections */
+.section {
+  padding: 80px 60px;
+}
+
+.section.dark {
+  background: #111118;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #1a1a2e;
+  padding: 30px;
+  border-radius: 16px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #ff2c2c;
+}
+
+.card p {
+  color: #cccccc;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Footer */
+footer {
+  padding: 30px;
+  text-align: center;
+  background: #000000;
+  color: #777777;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar nav {
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+}
