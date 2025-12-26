@@ -217,3 +217,33 @@ footer {
     padding: 60px 20px;
   }
 }
+/* Logo Image */
+.logo img {
+  height: 40px;
+}
+
+/* Hero with background image */
+.hero-image {
+  background: 
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("images/anime-collage.jpg") center/cover no-repeat;
+}
+
+/* Hero Content */
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+}
+
+/* Big Logo in Hero */
+.hero-logo {
+  width: 140px;
+  margin-bottom: 20px;
+}
+
+/* Mobile fixes */
+@media (max-width: 768px) {
+  .hero-logo {
+    width: 110px;
+  }
+}
