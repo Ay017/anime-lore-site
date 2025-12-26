@@ -217,33 +217,24 @@ footer {
     padding: 60px 20px;
   }
 }
-/* Logo Image */
-.logo img {
-  height: 40px;
-}
-
-/* Hero with background image */
-.hero-image {
-  background: 
-    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
-    url("images/anime-collage.jpg") center/cover no-repeat;
-}
-
-/* Hero Content */
-.hero-content {
-  text-align: center;
-  max-width: 800px;
-}
-
-/* Big Logo in Hero */
+/* Hero Logo */
 .hero-logo {
-  width: 140px;
+  max-width: 280px;
+  width: 100%;
+  height: auto;
   margin-bottom: 20px;
 }
 
-/* Mobile fixes */
+/* Laptop / Desktop */
+@media (min-width: 1024px) {
+  .hero-logo {
+    max-width: 220px;
+  }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
   .hero-logo {
-    width: 110px;
+    max-width: 140px;
   }
 }
