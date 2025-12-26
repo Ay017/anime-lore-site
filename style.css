@@ -226,14 +226,14 @@ footer {
 }
 
 /* Laptop / Desktop */
-@media (min-width: 458px) {
+@media (min-width: 1024px) {
   .hero-logo {
     max-width: 220px;
   }
 }
 
 /* Mobile */
-@media (max-width: 220px) {
+@media (max-width: 768px) {
   .hero-logo {
     max-width: 140px;
   }
